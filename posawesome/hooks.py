@@ -2,12 +2,12 @@
 from __future__ import unicode_literals
 from . import __version__ as app_version
 
-app_name = "posawesome"
-app_title = "POS Awesome"
-app_publisher = "Youssef Restom"
-app_description = "POS Awesome"
+app_name = "awesomepos"
+app_title = "Awesome POS"
+app_publisher = "Youssef Restom + Beveren"
+app_description = "Awesome POS"
 app_icon = "octicon octicon-file-directory"
-app_color = "grey"
+app_color = "blue"
 app_email = "youssef@totrox.com"
 app_license = "GPLv3"
 
