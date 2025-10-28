@@ -4,8 +4,12 @@ from setuptools import setup, find_packages
 with open("requirements.txt") as f:
     install_requires = f.read().strip().split("\n")
 
-# get version from __version__ variable in posawesome/__init__.py
-from posawesome import __version__ as version
+# get version from __version__ variable in posawesome/__init__.py without importing the package
+version = None
+with open("posawesome/__init__.py", "r") as f:
+    namespace = {}
+    exec(compile(f.read(), "posawesome/__init__.py", "exec"), namespace)
+    version = namespace.get("__version__")
 
 setup(
     name="posawesome",
